@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  
+  .navMenu a {
+    color: bisque;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 20px; /* Adjust the padding to control the space between words */
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(170px);
+  transform: translateX(170px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(310px);
+  transform: translateX(310px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(460px);
+  transform: translateX(460px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.max {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.max img{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.max h1{
+    text-align: center;
+    margin: 10px;
+    color: #f6f4e6;
+}
+
+/*##########################################################################################################*/
+
+body {
+    background-image: url(./bgg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; /* Reset default margin to ensure full width and height coverage */
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh; /* Make the container cover the full viewport height */
+  }
+  
+  .profile {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center;
+    color: #f0f0f0;
+    margin-top: 50px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    color: #f0f0f0;
+    width: 100%;
+  }
+  
+  td {
+    border: 1px solid rgb(253, 253, 253);
+    padding: 8px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  th {
+    border: 1px solid rgb(253, 253, 253);
+    padding: 8px;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 200px;
+  }
+  
+  .biodata {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%; /* Adjust the width as needed */
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .biodata-row {
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    background-color: #444;
+    color: #fff;
+  }
+
+/*##########################################################################################################*/
+
+.profile img{
+    height: 60px;
+    width: 240px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+    grid-template-rows: 1fr; /* One row that takes up the full height */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }  
+  
+
+  .grid-item {
+    position: relative; /* Add this to make the pseudo-element work */
+    padding: 20px;
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3); /* Blurred white background */
+    backdrop-filter: blur(100px); /* Adjust the blur strength as needed */
+    z-index: -1; /* Place it behind the content */
+}
+  
+.f1-comp{
+    width: 200px;
+    height: auto;
+}
+
+/*##########################################################################################################*/
+
+.profile2 img{
+    width: 300px;
+    height: 90px;
+}
+
+.grid-uni{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Four columns with equal width */
+    grid-template-rows: 1fr; /* One row that takes up the full height */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+  }  
+
+.uni-comp{
+    width: 400px;
+    height: auto;
+}
+
+.profile2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center;
+    color: #f0f0f0;
+    margin-top: 50px;
+}
